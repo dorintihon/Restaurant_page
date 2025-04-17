@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: rgb(250, 233, 224);
+    
 }
 
 body{
@@ -22,6 +22,7 @@ body{
 
 #nav_header h1{
     margin: 0;
+    color: rgb(250, 233, 224);
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -46,28 +47,7 @@ body{
     cursor: pointer;
 }
 
-#content{
-    /* border: 2px solid black; */
-    align-self: end;
-    justify-self: center;
-    display: grid;
-}
-
-#content h1{
-    margin: 0;
-    padding: 20px;
-    font-size: 4rem;
-    text-align: center;
-}
-
-#content p{
-    margin: 0;
-    padding: 20px;
-    font-size: 2rem;
-    text-align: center;
-}
-
-#content button, .contact button{
+.contact button{
     background-color: rgb(104, 55, 39);
     border-radius: 22px;
     color: white;
