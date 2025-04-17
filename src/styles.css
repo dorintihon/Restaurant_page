@@ -1,11 +1,108 @@
-header{
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(250, 233, 224);
 }
 
-h1{
-    color: wheat;
+body{
+    display: grid;
+    grid-template-rows: 100px 1fr auto;
+    height: 116vh;
+    margin: 0;
 }
+
+#nav_header{
+    display: grid;
+    background-color: black;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 80%, transparent);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#nav_header h1{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    font-size: 3rem;
+    justify-self: start;
+    align-self: center;
+}
+
+#nav_header nav{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+#nav_header nav button{
+    background-color: transparent;
+    color: rgb(250, 233, 224);
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+#content{
+    /* border: 2px solid black; */
+    align-self: end;
+    justify-self: center;
+    display: grid;
+}
+
+#content h1{
+    margin: 0;
+    padding: 20px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#content p{
+    margin: 0;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#content button, .contact button{
+    background-color: rgb(104, 55, 39);
+    border-radius: 22px;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 15px 30px;
+    margin: 20px;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+}
+
 
 .contact{
-    background-color: brown;
+    display: grid;
+    align-self: center;
+    justify-self: stretch;
+    background-color: rgb(250, 233, 224);
+    
 }
+.contact > *{
+    color: black;
+}
+.contact h2{
+    margin: 0;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact p{
+    margin: 0;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
