@@ -1,6 +1,10 @@
 import './styles.css';
 import mainImage from './main_image.jpg';
 
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+}
+
 function renderMainPage() {
     
     const title = document.createElement('h1');
@@ -57,7 +61,7 @@ function loadHomePage() {
     p.style.textAlign = 'center';
 
     const aboutDiv = document.querySelector('.contact');
-    
+
 
 
     const buttons = content.querySelectorAll('button');
